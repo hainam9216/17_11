@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>TÍNH TIỀN CÁP</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+  <!-- Nhập mã khách hàng, loại khách hàng, số kết nối, số kênh cao cấp -->
+  <!-- Nếu chọn Doanh nghiệp ô nhập số kết nối sẽ hiện lên, nếu chọn nhà dân thì ô nhập kết nối sẽ ẩn đi hoặc disabled -->
+  <div class="container">
+    <h2>TÍNH TIỀN CÁP</h2>
+    <form>
+      <div class="form-group">
+        <label>Nhập mã khách hàng:</label>
+        <input type="text" class="form-control" id="UserID" name="UserID">
+      </div>
+      <div class="form-group">
+        <label>Chọn loại khách hàng:</label>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="optradio" id="NhaDan">Nhà dân
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="optradio" id="DoanhNghiep">Doanh nghiệp
+          </label>
+        </div>
+      </div>
+      <div class="form-group" id="KN">
+        <label>Nhập số kết nối:</label>
+        <input type="number" class="form-control" id="soKn" name="Kn" >
+      </div>
+      <div class="form-group">
+        <label>Nhập số kênh cao cấp:</label>
+        <input type="number" class="form-control" id="KCaoCap" name="KCaoCap">
+      </div>
+    </form>
+    <button class="btn btn-primary" id="BtnClick">Submit</button>
+    <div id="output">
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./main.js"></script>
+</body>
+
+</html>
